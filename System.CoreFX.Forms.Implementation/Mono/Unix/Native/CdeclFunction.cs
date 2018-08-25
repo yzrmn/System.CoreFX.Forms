@@ -130,7 +130,8 @@ namespace Mono.Unix.Native {
                 // 		parameterTypes, 
                 // 		CallingConvention.Cdecl,
                 // 		CharSet.Ansi);
-                mi = tb.CreateType ().GetMethod (method);
+
+                mi = tb.CreateTypeInfo().GetType().GetMethod(method);
 				overloads.Add (typeName, mi);
 				return mi;
 			}

@@ -5,7 +5,14 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "System.CoreFX.Forms", "src\System.CoreFX.Forms.csproj", "{FA220ECD-E37C-4A95-8A7E-5DFD7F01F376}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "System.CoreFX.Forms.Implementation", "System.CoreFX.Forms.Implementation\System.CoreFX.Forms.Implementation.shproj", "{68E6413F-52E8-451B-94D8-BCECD2760FD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.NetStandard.Forms", "System.NetStandard.Forms\System.NetStandard.Forms.csproj", "{D0E08A42-7414-4B31-B839-A99CB1E18BEC}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		System.CoreFX.Forms.Implementation\System.CoreFX.Forms.Implementation.projitems*{68e6413f-52e8-451b-94d8-bcecd2760fd6}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -15,6 +22,10 @@ Global
 		{FA220ECD-E37C-4A95-8A7E-5DFD7F01F376}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA220ECD-E37C-4A95-8A7E-5DFD7F01F376}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA220ECD-E37C-4A95-8A7E-5DFD7F01F376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0E08A42-7414-4B31-B839-A99CB1E18BEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E08A42-7414-4B31-B839-A99CB1E18BEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E08A42-7414-4B31-B839-A99CB1E18BEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E08A42-7414-4B31-B839-A99CB1E18BEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
