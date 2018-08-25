@@ -1051,9 +1051,7 @@ namespace System.Windows.Forms {
             // ig.EmitCalli (OpCodes.Calli, CallingConvention.StdCall, ret_type, param_types);
             ig.Emit (OpCodes.Ret);
 
-			Type t = tb.CreateType ();
-			MethodInfo m = t.GetMethod (MethodName);
-
+            MethodInfo m = tb.CreateTypeInfo().GetType().GetMethod(MethodName);
 			return m;
 		}
 
